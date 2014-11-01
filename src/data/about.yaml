@@ -1,4 +1,9 @@
 title: About
+me:
+    name: Tomasz Jureczko
+    contacts:
+        phone: 07930005222
+        email: tomasz.jureczko@gmail.com
 items:
   - { key: citizenship, value: EU Poland }
   - { key: residency, value: London }
