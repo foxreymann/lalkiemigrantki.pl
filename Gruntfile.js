@@ -40,12 +40,18 @@ module.exports = function (grunt) {
           src: '**/*.hbs'
         }]
       }
+    },
+
+    watch: {
+      files: [ 'src/**' ],
+      tasks: [ 'default' ]
     }
   });
 
   /* load every plugin in package.json */
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   /* grunt tasks */
   grunt.registerTask('default', ['assemble', 'connect']);
