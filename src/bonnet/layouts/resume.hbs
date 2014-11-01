@@ -25,14 +25,17 @@
       {{>listed-information about}}
       {{>listed-information skills}}
       {{>two-line-list code-samples}}
-      {{#each pages}}
       {{#withSort experience 'data.startdate'}}
         {{#each this.pages }}
-          {{ this.position }} at {{ this.client }}
-          {{ this.startdate}} - {{ this.enddate }}        
+          <div>
+            <h3>{{this.data.position}} at {{this.data.client}}</h3>
+            {{this.data.startdate}} - {{this.data.enddate}}
+            {{#markdown}}
+              {{page}}
+            {{/markdown}} 
+          <div>
         {{/each}}
       {{/withSort}}
-      {{/each}}
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

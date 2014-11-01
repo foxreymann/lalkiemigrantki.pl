@@ -19,15 +19,10 @@ module.exports = function (grunt) {
       options: {
         collections: [
           {
-            name: 'post',
-            sortby: 'posted',
-            sortorder: 'descending'
-          },
-          {
-            title: 'experience',
+            name: 'experience',
             sortby: 'startdate',
             sortorder: 'descending'
-          }
+          },
         ],
         helpers: './src/bonnet/helpers/**/*.js',
         layout: 'resume.hbs',
