@@ -1,8 +1,10 @@
 <h1>{{title}}</h1>
 {{#each items}}
-	{{#if url}}
-		<a href="{{ this.url }}">{{ this.value }}</a>
-	{{else}}
-		{{ this.key }} : {{ this.value }}
-	{{/if}}
+	<div>
+		{{#if url}}
+			<a href="{{ this.url }}">{{ this.value }}</a>
+		{{else}}
+			{{ this.key }} : {{ this.value }}
+		{{/if}}
+	</div>
 {{/each}}
