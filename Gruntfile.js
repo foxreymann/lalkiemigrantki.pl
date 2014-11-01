@@ -17,11 +17,18 @@ module.exports = function (grunt) {
     /* assemble templating */
     assemble: {
       options: {
-        collections: [{
-          name: 'post',
-          sortby: 'posted',
-          sortorder: 'descending'
-        }],
+        collections: [
+          {
+            name: 'post',
+            sortby: 'posted',
+            sortorder: 'descending'
+          },
+          {
+            title: 'experience ',
+            sortby: 'startdate',
+            sortorder: 'descending'
+          }
+        ],
         helpers: './src/bonnet/helpers/**/*.js',
         layout: 'resume.hbs',
         layoutdir: './src/bonnet/layouts/',
