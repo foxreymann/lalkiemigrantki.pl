@@ -24,7 +24,7 @@ module.exports = function (grunt) {
             sortorder: 'descending'
           },
           {
-            title: 'experience ',
+            title: 'experience',
             sortby: 'startdate',
             sortorder: 'descending'
           }
