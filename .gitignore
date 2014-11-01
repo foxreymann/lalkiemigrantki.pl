@@ -1,3 +1,6 @@
 .death-star-plans
 dist
 node_modules
+#data/
+#content/experience
+#content/portfolio

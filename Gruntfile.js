@@ -72,7 +72,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   /* grunt tasks */
-  grunt.registerTask('default', ['serve']);
+  grunt.registerTask('default', ['server']);
   grunt.registerTask('build', ['assemble']);
   grunt.registerTask('server', ['assemble', 'connect:dev', 'watch']);
 
