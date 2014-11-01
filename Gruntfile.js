@@ -23,7 +23,7 @@ module.exports = function (grunt) {
           sortorder: 'descending'
         }],
         helpers: './src/bonnet/helpers/**/*.js',
-        layout: 'page.hbs',
+        layout: 'resume.hbs',
         layoutdir: './src/bonnet/layouts/',
         partials: './src/bonnet/partials/**/*'
       },
