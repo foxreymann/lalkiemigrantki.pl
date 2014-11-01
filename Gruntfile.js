@@ -5,12 +5,12 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('./package.json'),
 
     connect: {
-      dev: {
-        options: {
-          port: 8000,
-          base: './dist/',
-          keepalive: true
-        }
+        dev:{
+            options: {
+              port: 8000,
+              base: './dist/',
+              livereload: true
+            }
       }
     },
 
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         layoutdir: './src/bonnet/layouts/',
         partials: './src/bonnet/partials/**/*',
         data: './src/data/*.yaml',
-        assets: 'src/assets' 
+        assets: 'src/assets'
       },
       posts: {
         files: [{
@@ -60,11 +60,8 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      options: {
-          interrupt: true
-      },
       files: [ 'src/**/*' ],
-      tasks: [ 'default' ]
+      tasks: [ 'build' ]
     }
   });
 
@@ -75,6 +72,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   /* grunt tasks */
-  grunt.registerTask('default', ['assemble', 'connect']);
+  grunt.registerTask('default', ['serve']);
+  grunt.registerTask('build', ['assemble']);
+  grunt.registerTask('server', ['assemble', 'connect:dev', 'watch']);
 
 };
