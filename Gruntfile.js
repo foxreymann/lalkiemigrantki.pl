@@ -28,7 +28,7 @@ module.exports = function (grunt) {
         layout: 'resume.hbs',
         layoutdir: './src/bonnet/layouts/',
         partials: './src/bonnet/partials/**/*',
-        data: './src/data/*.yaml'
+        data: './src/data/*.yaml',
         assets: 'src/assets' 
       },
       posts: {
@@ -46,6 +46,19 @@ module.exports = function (grunt) {
       }
     },
 
+    copy: {
+        images: {
+            files: [
+                {
+                    expand: true,
+                    cwd: 'src/assets/images',
+                    src: ['**/*.{png,jpg,gif,svg,ico}'],
+                    dest: 'build/images/'
+                }
+            ]
+        },
+    },
+
     watch: {
       options: {
           interrupt: true
@@ -59,6 +72,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   /* grunt tasks */
   grunt.registerTask('default', ['assemble', 'connect']);
