@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         layoutdir: './src/bonnet/layouts/',
         partials: './src/bonnet/partials/**/*',
         data: './src/data/*.yaml'
-    
+        assets: 'src/assets' 
       },
       posts: {
         files: [{
