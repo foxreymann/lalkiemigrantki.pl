@@ -1,0 +1,12 @@
+<h1>Experience</h1>
+{{#withSort experience 'data.startdate'}}
+	{{#each this.pages }}
+		<div>
+			<h3>{{this.data.position}} at {{this.data.client}}</h3>
+			{{this.data.startdate}} - {{this.data.enddate}}
+			{{#markdown}}
+				{{page}}
+			{{/markdown}} 
+		<div>
+	{{/each}}
+{{/withSort}}
