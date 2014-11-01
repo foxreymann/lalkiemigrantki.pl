@@ -43,7 +43,10 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      files: [ 'src/**' ],
+      options: {
+          interrupt: true
+      },
+      files: [ 'src/**/*' ],
       tasks: [ 'default' ]
     }
   });
