@@ -2,4 +2,4 @@ title: About
 items:
   - { key: citizenship, value: EU Poland }
   - { key: residency, value: London }
-  - { key: github, value: www.github.com/tomaszjureczko, url: 'http://www.github.com/tomaszjureczko', type: url}
+  - { key: github, value: www.github.com/tomaszjureczko, url: 'http://www.github.com/tomaszjureczko'}
