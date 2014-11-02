@@ -47,16 +47,12 @@ module.exports = function (grunt) {
     },
 
     copy: {
-        images: {
-            files: [
-                {
-                    expand: true,
-                    cwd: 'src/assets/images',
-                    src: ['**/*.{png,jpg,gif,svg,ico}'],
-                    dest: 'build/images/'
-                }
-            ]
-        },
+      main: {
+        files: [
+          // includes files within path
+          {expand: true, src: ['**'], dest: 'dist/assets', cwd: 'src/assets'},
+        ],
+      },
     },
 
     watch: {
@@ -73,7 +69,7 @@ module.exports = function (grunt) {
 
   /* grunt tasks */
   grunt.registerTask('default', ['server']);
-  grunt.registerTask('build', ['assemble']);
-  grunt.registerTask('server', ['assemble', 'connect:dev', 'watch']);
+  grunt.registerTask('build', ['assemble', 'copy']);
+  grunt.registerTask('server', ['build', 'connect:dev', 'watch']);
 
 };
