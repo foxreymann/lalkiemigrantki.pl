@@ -1,0 +1,9 @@
+<h1>Portfolio</h1
+{{#withSort portfolio 'data.order'}}
+	{{#each this.pages}}
+		<img src="/assets/portfolio/{{this.data.client}}" />
+		{{#markdown}}
+			{{page}}
+		{{/markdown}} 
+	{{/each}}
+{{/withSort}}

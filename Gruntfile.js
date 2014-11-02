@@ -23,6 +23,11 @@ module.exports = function (grunt) {
             sortby: 'startdate',
             sortorder: 'descending'
           },
+          {
+            name: 'portfolio',
+            sortby: 'order',
+            sortorder: 'ascending'
+          }
         ],
         helpers: './src/bonnet/helpers/**/*.js',
         layout: 'resume.hbs',
