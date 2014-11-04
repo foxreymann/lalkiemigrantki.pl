@@ -61,8 +61,28 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      files: [ 'src/**/*' ],
+      files: [ 'src/**/*', '!src/assets/css' ],
       tasks: [ 'build' ]
+  },
+
+
+    less: {
+        build: {
+            options:{
+                paths: ["src/css"]
+            },
+            files:{
+                    "src/assets/css/resume.css": "src/css/main.less"
+            }
+        }
+    },
+
+    cssmin:{
+        combine: {
+            files: {
+                'src/assets/css/resume.min.css': ['src/assets/css/resume.css']
+            }
+        }
     }
   });
 
@@ -71,10 +91,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   /* grunt tasks */
   grunt.registerTask('default', ['server']);
-  grunt.registerTask('build', ['assemble', 'copy']);
+  grunt.registerTask('build', ['assemble', 'less', 'cssmin', 'copy']);
   grunt.registerTask('server', ['build', 'connect:dev', 'watch']);
 
 };

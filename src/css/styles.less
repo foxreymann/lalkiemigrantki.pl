@@ -1,0 +1,42 @@
+// @import "variables";
+
+body {
+    font-family : @body-font;
+    font-family: @heading-font;
+    font-size   : @font-size-normal;
+    color       : @text-color;
+    margin      : 5px;
+}
+
+
+h1 {
+    background: @bg-color;
+    color: @text-highlight-bg-color;
+    font-family: @heading-font;
+    font-size: @font-size-xxl;
+    padding: 2px 5px 2px 5px;
+}
+
+label {
+    font-family: @heading-font;
+    color: @text-color-strong;
+    min-width: 120px;
+    font-weight: normal;
+}
+
+.inset {
+    margin: 20px 0 50px 50px;
+}
+
+
+a {
+    border-bottom: 1px dotted @text-color;
+    text-decoration: none;
+    color: @text-color;
+
+    &:hover{
+        border-bottom: 1px dotted @text-color-strong;
+        text-decoration: none;
+        color: @text-color-strong;
+    }
+}

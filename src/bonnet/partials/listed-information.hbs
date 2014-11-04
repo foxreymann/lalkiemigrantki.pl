@@ -1,10 +1,13 @@
 <h1>{{title}}</h1>
-{{#each items}}
-	<div>
-		{{#if url}}
-			<a href="{{ this.url }}">{{ this.value }}</a>
-		{{else}}
-			{{ this.key }} : {{ this.value }}
-		{{/if}}
-	</div>
-{{/each}}
+<div class="inset">
+    {{#each items}}
+            <p>
+                <label>{{ this.key }} : </label>
+                {{#if url}}
+                    <a href="{{ this.url }}">{{ this.value }}</a>
+                {{else}}
+                    {{ this.value }}
+                {{/if}}
+            </p>
+    {{/each}}
+</div>
