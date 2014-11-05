@@ -1,6 +1,7 @@
 .death-star-plans
 dist
 node_modules
+src/assets/css
 #data/
 #content/experience
 #content/portfolio
