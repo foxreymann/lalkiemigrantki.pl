@@ -72,7 +72,7 @@ module.exports = function (grunt) {
                 paths: ["src/css"]
             },
             files:{
-                    "src/assets/css/resume.css": "src/css/main.less"
+                    "src/assets/css/app.css": "src/css/app.less"
             }
         }
     },
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
     cssmin:{
         combine: {
             files: {
-                'src/assets/css/resume.min.css': ['src/assets/css/resume.css']
+                'src/assets/css/app.min.css': ['src/assets/css/app.css']
             }
         }
     }
