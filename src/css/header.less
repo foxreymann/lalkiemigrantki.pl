@@ -3,6 +3,7 @@ header {
     top: 50px;
     display: block;
     height: 100px;
+    margin-bottom: 50px;
 
 
     .bar {
@@ -13,21 +14,22 @@ header {
     }
 
     .name {
-
-        font-size   : @font-size-xxl;
+        font-size   : @font-size-xl;
         margin      : 0;
         padding     : 0;
     }
 
     .cv {
+        font-family: @body-font;
         position: absolute;
         top: -60px;
+        text-transform: capitalize;
+        color: @bg-color;
     }
 
     .contacts {
-        text-size: @font-size-normal;
-        // font-family : @heading-font;
-        font-size   : @font-size-sm;
+        font-size   : @font-size-l;
+        text-align: right;
     }
 
     a {
