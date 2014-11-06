@@ -30,7 +30,7 @@ module.exports = function (grunt) {
           }
         ],
         helpers: './src/bonnet/helpers/**/*.js',
-        layout: 'resume.hbs',
+        layout: 'app.hbs',
         layoutdir: './src/bonnet/layouts/',
         partials: './src/bonnet/partials/**/*',
         data: './src/data/*.yaml',
