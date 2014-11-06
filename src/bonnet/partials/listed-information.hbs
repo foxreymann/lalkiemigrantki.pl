@@ -2,7 +2,7 @@
 <div class="inset">
     {{#each items}}
             <p>
-                <label>{{ this.key }} : </label>
+                <label class="title">{{ this.key }} : </label>
                 {{#if url}}
                     <a href="{{ this.url }}">{{ this.value }}</a>
                 {{else}}

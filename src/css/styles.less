@@ -14,14 +14,37 @@ h1 {
     color: @text-highlight-bg-color;
     font-family: @heading-font;
     font-size: @font-size-xl;
-    padding: 2px 5px 2px 5px;
+    padding: 2px 5px 2px 20px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family : @heading-font;
+    color       : @text-color-strong;
+    margin: 10px 0 5px 0;
+    font-weight : normal;
+
+    .company {
+        color       : @text-color;
+    }
+
+    .date {
+        color       : @text-color;
+        float: right;
+    }
 }
 
 label {
-    font-family: @heading-font;
-    color: @text-color-strong;
-    min-width: 120px;
-    font-weight: normal;
+    font-family : @heading-font;
+    color       : @text-color-strong;
+    font-weight : normal;
+    text-align  : right;
+    display     : inline-block;
+
+    &.title {
+        margin-right: 5px;
+        min-width   : 120px;
+    }
 }
 
 .inset {
@@ -39,4 +62,9 @@ a {
         text-decoration: none;
         color: @text-color-strong;
     }
+}
+
+.wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
 }
