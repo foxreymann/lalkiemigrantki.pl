@@ -1,12 +1,17 @@
 <h1>Experience</h1>
-{{#withSort experience 'data.startdate'}}
-	{{#each this.pages }}
-		<div>
-			<h3>{{this.data.position}} at {{this.data.client}}</h3>
-			{{this.data.startdate}} - {{this.data.enddate}}
-			{{#markdown}}
-				{{page}}
-			{{/markdown}} 
-		</div>
-	{{/each}}
-{{/withSort}}
+<div class="inset experience">
+    {{#withSort experience 'data.startdate'}}
+        {{#each this.pages }}
+            <h3>
+				{{this.data.position}} @ <span class="company">{{this.data.client}}</span>
+				<span class="date">{{this.data.startdate}} - {{this.data.enddate}}</span>
+			</h3>
+
+            <div>
+                {{#markdown}}
+                    {{page}}
+                {{/markdown}}
+            </div>
+        {{/each}}
+    {{/withSort}}
+</div>
