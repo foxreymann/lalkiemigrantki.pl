@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'bebas_neue';
+  src: url('/assets/fonts/bebas_neue/BebasNeue-webfont.eot');
+  src: url('/assets/fonts/bebas_neue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/bebas_neue/BebasNeue-webfont.woff') format('woff'), url('/assets/fonts/bebas_neue/BebasNeue-webfont.ttf') format('truetype'), url('/assets/fonts/bebas_neue/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Arial";
+  font-family: "bebas_neue";
+  font-size: 18px;
+  color: #a3a3a3;
+  margin: 5px;
+}
+h1 {
+  background: #575757;
+  color: #ffffff;
+  font-family: "bebas_neue";
+  font-size: 30px;
+  padding: 2px 5px 2px 20px;
+  font-weight: normal;
+}
+h3 {
+  font-family: "bebas_neue";
+  color: #333333;
+  margin: 10px 0 5px 0;
+  font-weight: normal;
+}
+h3 .company {
+  color: #a3a3a3;
+}
+h3 .date {
+  color: #a3a3a3;
+  float: right;
+}
+label {
+  font-family: "bebas_neue";
+  color: #333333;
+  font-weight: normal;
+  text-align: right;
+  display: inline-block;
+}
+label.title {
+  margin-right: 5px;
+  min-width: 120px;
+}
+.inset {
+  margin: 20px 0 50px 50px;
+}
+a {
+  border-bottom: 1px dotted #a3a3a3;
+  text-decoration: none;
+  color: #a3a3a3;
+}
+a:hover {
+  border-bottom: 1px dotted #333333;
+  text-decoration: none;
+  color: #333333;
+}
+.wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+header {
+  top: 50px;
+  display: block;
+  height: 100px;
+  margin-bottom: 50px;
+}
+header .bar {
+  background: #575757;
+  padding: 5px 50px 5px 50px;
+  color: #ffffff;
+  font-family: "bebas_neue";
+  margin-top: 50px;
+  height: 30px;
+  line-height: 30px;
+}
+header img {
+  position: absolute;
+  top: 0px;
+  border: 7px solid #fff;
+}
+header .name {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 0 0 120px;
+  padding: 0;
+}
+header .cv {
+  font-family: "Arial";
+  position: absolute;
+  top: -10px;
+  left: 170px;
+  text-transform: capitalize;
+  color: #575757;
+}
+header .contacts {
+  font-size: 20px;
+  float: right;
+  margin-right: 20px;
+  font-weight: normal;
+}
+header .contacts a {
+  color: inherit;
+  border-bottom: none;
+}
+header .contacts a:hover {
+  color: inherit;
+}
+header a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+header a:hover {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+.experience h3 {
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 5px solid #333333;
+}
+.experience h3:first-child {
+  margin-top: 0;
+  border-top: none;
+}
