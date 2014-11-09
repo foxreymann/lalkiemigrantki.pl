@@ -1,65 +1,26 @@
 header {
-    top: 50px;
-    display: block;
-    height: 100px;
-    margin-bottom: 50px;
+    .banner {
+        width: 100%;
+        // height: 150px;
+        overflow: hidden;
+        position: relative;
 
+        img {
+            width: 100%;
+            margin-top: -11%;
 
-    .bar {
-        background: @bg-color;
-        padding: 5px 50px 5px 50px;
-        color: @text-highlight-bg-color;
-        font-family : @heading-font;
-        margin-top: 50px;
-        height: @font-size-xl;
-        line-height: @font-size-xl;
-    }
-
-    img {
-        position: absolute;
-        top: 0px;
-        border: 7px solid #fff;
-    }
-
-    .name {
-        font-size   : @font-size-xl;
-        font-weight: normal;
-        margin      : 0 0 0 120px;
-        padding     : 0;
-    }
-
-    .cv {
-        font-family: @body-font;
-        position: absolute;
-        top: -10px;
-        left: 170px;
-        text-transform: capitalize;
-        color: @bg-color;
-    }
-
-    .contacts {
-        font-size    : @font-size-l;
-        float        : right;
-        margin-right : 20px;
-        font-weight: normal;
-
-        a {
-            color: inherit;
-            border-bottom: none;
-
-            &:hover {
-                color: inherit;
-            }
         }
-    }
 
-    a {
-        text-decoration: none;
-        color       : @text-color;
-    }
+        h1 {
+            position: absolute;
+            color: #fff;
+            text-align: center;
+            width: 80%;
+            left: 10%;
+            text-shadow: 2px 2px #000;
+            font-weight: bold;
+            top: 20%;
+        }
 
-    a:hover {
-        color       : @text-color;
-        text-decoration: none;
     }
 }
