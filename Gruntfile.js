@@ -19,12 +19,7 @@ module.exports = function (grunt) {
       options: {
         collections: [
           {
-            name: 'experience',
-            sortby: 'startdate',
-            sortorder: 'descending'
-          },
-          {
-            name: 'portfolio',
+            name: 'menu',
             sortby: 'order',
             sortorder: 'ascending'
           }
