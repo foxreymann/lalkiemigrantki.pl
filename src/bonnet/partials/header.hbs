@@ -14,22 +14,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
+          <a class="navbar-brand" href="#"><img src="/assets/images/logo_b&w.png"/> Buy to Let</a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
 
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
             {{#withSort menu 'data.order'}}
               {{#each this.pages }}
               <li><a href="{{ replaceStr this.dest 'dist' '' }}">{{ this.data.title }}</a></li>
               {{/each}}
             {{/withSort}}
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/about">About us</a></li>
-            <li><a href="/contacts">Contacts</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
