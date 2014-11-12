@@ -21,3 +21,7 @@ header .banner h1 {
   font-weight: bold;
   top: 20%;
 }
+header .navbar-brand img {
+  display: inline-block;
+  margin-right: 15px;
+}
