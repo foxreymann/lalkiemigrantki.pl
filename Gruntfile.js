@@ -51,6 +51,7 @@ module.exports = function (grunt) {
         files: [
           // includes files within path
           {expand: true, src: ['**'], dest: 'dist/assets', cwd: 'src/assets'},
+          {expand: true, flatten: true, src: ['src/css/bootstrap.min.css'], dest: 'dist/assets/css'},
         ],
       },
     },
