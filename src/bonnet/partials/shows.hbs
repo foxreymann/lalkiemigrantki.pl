@@ -1,0 +1,15 @@
+SHOWS LIST
+{{#withSort shows 'data.order'}}
+  {{#each this.pages }}
+    <a href="{{ replaceStr this.dest 'dist' '' }}">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{{ this.data.thumb }}" />
+        </div>
+        <div class="col-md-8">
+          {{ this.data.title }}
+        </div>
+      </div>
+    </a>
+  {{/each}}
+{{/withSort}}
