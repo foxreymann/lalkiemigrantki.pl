@@ -22,6 +22,11 @@ module.exports = function (grunt) {
             name: 'menu',
             sortby: 'order',
             sortorder: 'ascending'
+          },
+          {
+            name: 'shows',
+            sortby: 'order',
+            sortorder: 'ascending'
           }
         ],
         helpers: './src/bonnet/helpers/**/*.js',
