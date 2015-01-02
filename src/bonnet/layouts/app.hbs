@@ -21,9 +21,9 @@
         {{> header }}
         <div class="stage">
           {{#markdown}} {{> body}} {{/markdown}}
-          {{#if basename EQUALS "index"}}
-            SHOWS
-          {{/if}}
+          {{#ifCond basename "==" "index"}}
+            {{> shows }}
+          {{/ifCond}}
         </div>
         {{> footer }}
     </div>
