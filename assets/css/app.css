@@ -6440,6 +6440,10 @@ a.list-group-item-danger.active:focus {
     display: none !important;
   }
 }
+@font-face {
+  font-family: etcher04;
+  src: url('/assets/fonts/etcher04.ttf');
+}
 h1,
 h2,
 h3,
@@ -6482,6 +6486,8 @@ header .navbar-default .navbar-nav > li > a {
 }
 header .navbar-default .navbar-brand {
   color: #d22;
+  font-family: etcher04;
+  font-size: 36px;
 }
 header .navbar-default .navbar-brand img {
   display: inline-block;
