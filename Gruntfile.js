@@ -24,6 +24,11 @@ module.exports = function (grunt) {
             sortorder: 'ascending'
           },
           {
+            name: 'ourteam',
+            sortby: 'order',
+            sortorder: 'ascending'
+          },
+          {
             name: 'show',
             sortby: 'order',
             sortorder: 'ascending'
