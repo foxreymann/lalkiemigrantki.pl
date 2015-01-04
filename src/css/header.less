@@ -9,12 +9,13 @@ header {
     white-space: nowrap;
     color: white;
     font-family: etcher04i;
-    font-size: 28px;
+    font-size: 20px;
 
     margin: 40px 0 40px;
     @media (min-width: @screen-sm-min) {
-       /* rules for tablet (768 > 992) */
-       margin: 40px 0 40px;
+      /* rules for tablet (768 > 992) */
+      margin: 40px 0 40px;
+      font-size: 28px;
     }
     @media (min-width: @screen-md-min) {
        /* rules for desktop (992 > 1200) */
@@ -22,14 +23,17 @@ header {
       font-size: 36px;
     }
     @media (min-width: @screen-lg-min) {
-       /* rules for large (> 1200) */
-       margin: 70px 0 40px;
+      /* rules for large (> 1200) */
+      margin: 70px 0 40px;
     }
 
     .oval {
-      padding: 40px;
+      padding: 25px;
       border-radius: 50%;
       background: #d22;
+      @media (min-width: @screen-sm-min) {
+        padding: 40px;
+      }
     }
   }
 
@@ -37,9 +41,14 @@ header {
     text-align: center;
     img {
       width: 100%;
-    }
-    &.hidden-lg img {
-      width: 60%;
+      @media (min-width: @screen-sm-min) {
+        /* rules for tablet (768 > 992) */
+        width: 60%;
+      }
+      @media (min-width: @screen-md-min) {
+         /* rules for desktop (992 > 1200) */
+        width: 100%;
+      }
     }
   }
 }
