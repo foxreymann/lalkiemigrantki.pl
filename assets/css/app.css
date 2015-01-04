@@ -6458,6 +6458,9 @@ h6,
 .h6 {
   font-weight: 400;
 }
+img {
+  width: 100%;
+}
 footer {
   margin-top: 50px;
   padding: 20px;
