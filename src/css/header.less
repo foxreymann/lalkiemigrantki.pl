@@ -5,13 +5,21 @@ header {
   }
 
   .brand {
+    text-align: center;
+    white-space: nowrap;
     color: #d22;
     font-family: etcher04;
     font-size: 36px;
   }
 
-  .logo img {
+  .logo {
+    text-align: center;
+    img {
       width: 100%;
+    }
+    &.hidden-lg img {
+      width: 60%;
+    }
   }
 }
 
