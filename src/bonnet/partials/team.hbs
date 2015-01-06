@@ -2,6 +2,8 @@
 ### **Zespół**
 {{/markdown}}
 
+{{ debug ourteam }}
+
 {{#withSort ourteam 'data.order'}}
   {{#each this.pages }}
     <a href="{{ replaceStr this.dest 'dist' '' }}">
