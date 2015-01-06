@@ -35,22 +35,4 @@ module.exports.register = function (Handlebars, options) {
             return options.inverse(this);
     }
   });
-
-  Handlebars.registerHelper("debug", function(optionalValue) {
-    if (optionalValue) {
-      console.log("Value");
-      console.log("====================");
-      console.log(optionalValue);
-      console.log(optionalValue[0].pages[0]);
-      console.log(optionalValue[0].pages[1]);
-      console.log(optionalValue[0].pages[2]);
-      console.log(optionalValue[0].pages[3]);
-      return;
-    }
-    console.log("Current Context");
-    console.log("====================");
-    console.log(this);
-
-  });
-
 };

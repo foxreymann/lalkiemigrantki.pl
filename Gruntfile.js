@@ -46,9 +46,9 @@ module.exports = function (grunt) {
           cwd: './src/content/',
           dest: './dist/',
           expand: true,
-          src: ['**/*.hbs', '!_pages/**/*.hbs']
+          src: ['**/*.hbs', '!pages/**/*.hbs']
         }, {
-          cwd: './src/content/_pages/',
+          cwd: './src/content/pages/',
           dest: './dist/',
           expand: true,
           src: '**/*.hbs'
