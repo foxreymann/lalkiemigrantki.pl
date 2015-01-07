@@ -90,6 +90,10 @@ module.exports = function (grunt) {
                 'src/assets/css/print.min.css': ['src/assets/css/print.css']
             }
         }
+    },
+
+    clean: {
+      dist: ["dist/*", "!dist/CNAME", "!dist/.git"]
     }
   });
 
@@ -100,10 +104,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   /* grunt tasks */
   grunt.registerTask('default', ['server']);
-  grunt.registerTask('build', ['assemble', 'less', 'cssmin', 'copy']);
+  grunt.registerTask('build', ['clean:dist', 'assemble', 'less', 'cssmin', 'copy']);
   grunt.registerTask('server', ['build', 'connect:dev', 'watch']);
 
 };
