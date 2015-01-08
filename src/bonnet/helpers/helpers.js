@@ -35,4 +35,10 @@ module.exports.register = function (Handlebars, options) {
             return options.inverse(this);
     }
   });
+
+  Handlebars.registerHelper('trimString', function(passedString, startstring, endstring) {
+   var theString = passedString.substring( startstring, endstring );
+   return new Handlebars.SafeString(theString)
+  });
+
 };
