@@ -6,11 +6,24 @@
   {{#each this.pages }}
     <a href="{{ replaceStr this.dest 'dist' '' }}">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <img src="{{ this.data.thumbnail }}" />
         </div>
-        <div class="col-md-8">
-          {{ this.data.title }}
+        <div class="col-sm-8">
+          <div>
+            {{this.data.name }}
+          </div>
+          <div>
+            {{ this.data.title }}
+          </div>
+          <div>
+            {{#markdown}}
+              {{{trimString page 0 300}}}…
+            {{/markdown}}
+            <div>
+              Czytaj dalej &raquo;
+            </div>
+          </div>
         </div>
       </div>
     </a>
