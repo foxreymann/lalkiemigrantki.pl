@@ -20,42 +20,8 @@
       <div class="container">
         {{> header }}
         <div class="stage">
-          {{#ifCond dirname "==" "dist/shows"}}
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="{{ thumbnail }}" />
-              </div>
-              <div class="col-sm-8">
-                <div>
-                  {{type }}
-                </div>
-                <h1>
-                  {{title}}
-                </h1>
-                <div>
-                  Przedział wiekowy: {{age-group}}
-                </div>
-                <div>
-                  Czas trwania: {{duration}}
-                </div>
-              </div>
-            </div>
-          {{/ifCond}}
-          {{#ifCond dirname "==" "dist/team"}}
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="{{ thumbnail }}" />
-              </div>
-              <div class="col-sm-8">
-                <h1>
-                  {{name }}
-                </h1>
-                <div>
-                  {{title }}
-                </div>
-              </div>
-            </div>
-          {{/ifCond}}
+          {{> show-page }}
+          {{> team-page }}
           {{#markdown}}
             {{> body}}
           {{/markdown}}
