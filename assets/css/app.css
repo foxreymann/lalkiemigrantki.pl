@@ -6458,8 +6458,11 @@ h6,
 .h6 {
   font-weight: 400;
 }
-img {
+.container img {
   width: 100%;
+}
+.stage img {
+  margin-top: 10px;
 }
 #lalki footer {
   border-left: 0;
